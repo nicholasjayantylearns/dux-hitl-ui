@@ -30,17 +30,19 @@ This is a Next.js 15 web application that serves as a Behavior-Driven Developmen
 | **Styling** | Tailwind CSS | ^3.4.17 |
 | **UI Components** | Radix UI Primitives | latest |
 | **BDD Parser** | @cucumber/gherkin | via @cucumber/messages ^28.1.0 |
-| **AI Integration** | @ai-sdk/react + ai | ^3.0.41 / ^5.0.2 |
+| **AI Integration** | @ai-sdk/react | ^3.0.41 |
+| | ai | ^5.0.2 |
 | **Testing** | Cucumber.js + Playwright | ^10.0.0 / ^1.40.0 |
 | **Icons** | Lucide React | ^0.454.0 |
 | **Markdown** | react-markdown | ^10.1.0 |
 
 ### Architecture Pattern
-**Server-Side Rendering (SSR) with Client-Side Interactivity**
+**Server Components with Client-Side Interactivity**
 
 The application uses Next.js 15 App Router with:
+- Server Components by default (automatic SSR)
+- Client Components for interactivity (marked with "use client")
 - Server-side API routes for data fetching
-- Client-side React components for interactivity
 - File-based routing with dynamic segments
 - CSS-in-JS via Tailwind with CSS variables for theming
 
@@ -201,7 +203,10 @@ These components serve as the foundation for all HITL use cases and will be modi
 | `components/UniversalCard.tsx` | Expandable feature/scenario card |
 | `components/StepList.tsx` | BDD step rendering with status |
 | `app/components/hitl/ChatInterface.tsx` | AI-powered narrative refinement |
-| `app/components/ui/*.tsx` | Shadcn/UI primitive components |
+| `app/components/jtbd_timeline.tsx` | Legacy timeline visualization component |
+| `app/components/ui/*.tsx` | Shadcn/UI primitive components (Card, Button, Input, etc.) |
+| `app/components/ui/crt-background.tsx` | CRT monitor visual effects |
+| `app/components/ui/typewriter.tsx` | Typewriter animation component |
 
 ### BDD Feature Files
 
@@ -302,6 +307,18 @@ interface BDDFeature {
     critical_blockers: number,
     key_features_operational: number
   }
+}
+```
+
+### GET /api/bdd/mockups
+
+**Purpose:** Returns UI mockup data for dashboard visualization
+
+**Response Format:**
+```typescript
+{
+  mockups: MockupData[],
+  // Structure TBD - verify with actual implementation
 }
 ```
 
@@ -495,6 +512,8 @@ npm run test:e2e
 
 ### Scripts
 
+#### NPM Scripts (package.json)
+
 ```json
 {
   "dev": "next dev",
@@ -506,6 +525,15 @@ npm run test:e2e
   "test:e2e": "cucumber-js --profile e2e"
 }
 ```
+
+#### Utility Scripts
+
+| File | Purpose |
+|------|---------|
+| `test-extraction.sh` | Shell script for testing extraction workflows |
+| `capture-screenshots.js` | Node.js script for capturing dashboard screenshots |
+| `timeout-manager.js` | Node.js utility for managing timeouts |
+| `scripts/generate_longitudinal_data.py` | Python script for generating longitudinal roadmap data |
 
 ---
 
