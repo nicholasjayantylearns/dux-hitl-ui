@@ -1,0 +1,96 @@
+# --- OS / Editor ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+.Spotlight-V100
+.Trashes
+
+.idea/
+.vscode/
+.history/
+*.swp
+*.swo
+
+# Cursor / Claude / AI tooling
+.cursor/
+.claude/
+.aider*
+.windsurf/
+.continue/
+
+# --- Node / Next ---
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+dist/
+build/
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.swc/
+.tsbuildinfo
+*.tsbuildinfo
+.rollup.cache/
+.vite/
+.nuxt/
+.svelte-kit/
+.yarn/
+.pnp.*
+.pnpm-store/
+.npm/
+.turbo/
+.vercel/
+next-env.d.ts
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Env (all variations) ---
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# --- Tests / tooling artifacts ---
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+reports/
+artifacts/
+results/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# --- Media (usually large; keep generated artifacts out) ---
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.webm
+*.wmv
+
+# Common generated screenshots / recordings folders
+**/screenshots/
+**/recordings/
+**/videos/
+**/test-artifacts/
+**/.playwright-mcp/
+

@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+
+    --radius: 0.5rem;
+
+    /* Base UI Colors (Light Theme Defaults) */
+    --background-primary: 240 5% 96%; /* gray-100 */
+    --background-secondary: 0 0% 100%; /* white */
+    --background-tertiary: 240 4.8% 95.9%; /* gray-50 */
+    --border-default: 240 5.9% 90%; /* gray-200 */
+    --text-primary: 240 10% 3.9%; /* gray-900 */
+    --text-secondary: 240 3.8% 46.1%; /* gray-600 */
+    --text-muted: 240 3.7% 15.9%; /* gray-800 */
+    --text-placeholder: 240 3.8% 46.1%; /* gray-500 */
+
+    /* Card Specific Colors - Clarity Concept (Light) */
+    --card-clarity-bg: var(--background-secondary); /* white */
+    --card-clarity-border: var(--border-default); /* gray-200 */
+    --card-clarity-text-primary: var(--text-primary); /* gray-900 */
+    --card-clarity-text-secondary: var(--text-placeholder); /* gray-500 */
+    --card-clarity-text-muted: var(--text-muted); /* gray-800 */
+    --card-clarity-text-italic: 240 5% 30%; /* gray-700 */
+
+    /* Card Specific Colors - Monospace Concept (Terminal Green) */
+    --card-monospace-bg: 0 0% 0%; /* Pure black */
+    --card-monospace-border: 120 100% 25%; /* Dark green */
+    --card-monospace-text-primary: 120 100% 50%; /* Bright green */
+    --card-monospace-text-secondary: 120 100% 35%; /* Medium green */
+
+    /* Accent Colors (for scores, progress, icons) */
+    --accent-problem: 217 91% 59%; /* blue-600 */
+    --accent-behavior: 142 71% 45%; /* green-600 */
+    --accent-result: 217 91% 59%; /* blue-600 (reusing for result metric) */
+    --accent-positive: 142 71% 45%; /* green-600 */
+    --accent-negative: 0 84.2% 60.2%; /* red-600 */
+    --accent-warning: 48 96% 89%; /* yellow-100 */
+    --accent-warning-border: 40 89% 60%; /* yellow-400 */
+    --accent-warning-text: 40 89% 30%; /* yellow-900 */
+
+    /* Journey Map Specific Colors */
+    --problem-node-bg: 0 100% 98%; /* red-50 */
+    --problem-node-border: 0 84.2% 60.2%; /* red-200 */
+    --behavior-node-bg: 217 91% 97%; /* blue-50 */
+    --behavior-node-border: 217 91% 59%; /* blue-200 */
+    --result-node-bg: 142 71% 97%; /* green-50 */
+    --result-node-border: 142 71% 45%; /* green-200 */
+
+    /* Carousel Specific Colors */
+    --carousel-bg: 240 10% 3.9%; /* gray-900 */
+    --carousel-border: 240 3.7% 15.9%; /* gray-700 */
+    --carousel-text-primary: 240 0% 98%; /* gray-300 */
+    --evidence-highlight-bg: 240 10% 3.9%; /* gray-900 */
+    --evidence-highlight-border: 240 3.7% 15.9%; /* gray-700 */
+
+    /* New variable for animation duration */
+    --reveal-duration: 7s;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 5% 64.9%;
+
+    /* Dark theme overrides */
+    --background-primary: 240 10% 3.9%; /* gray-900 */
+    --background-secondary: 240 3.7% 15.9%; /* gray-800 */
+    --background-tertiary: 240 5% 6.4%; /* gray-950 */
+    --border-default: 240 3.7% 15.9%; /* gray-700 */
+    --text-primary: 240 0% 98%; /* gray-50 */
+    --text-secondary: 240 3.8% 46.1%; /* gray-400 */
+    --text-muted: 240 5% 64.9%; /* gray-300 */
+    --text-placeholder: 240 3.8% 46.1%; /* gray-500 */
+
+    /* Card Specific Colors - Clarity Concept (Dark) */
+    --card-clarity-bg: var(--background-secondary); /* gray-800 */
+    --card-clarity-border: var(--border-default); /* gray-700 */
+    --card-clarity-text-primary: var(--text-primary); /* gray-50 */
+    --card-clarity-text-secondary: var(--text-secondary); /* gray-400 */
+    --card-clarity-text-muted: var(--text-muted); /* gray-300 */
+    --card-clarity-text-italic: 240 5% 64.9%; /* gray-300 */
+
+    /* Card Specific Colors - Monospace Concept (Terminal Green) */
+    --card-monospace-bg: 0 0% 0%; /* Pure black */
+    --card-monospace-border: 120 100% 25%; /* Dark green */
+    --card-monospace-text-primary: 120 100% 50%; /* Bright green */
+    --card-monospace-text-secondary: 120 100% 35%; /* Medium green */
+
+    /* Journey Map Specific Colors (Dark Theme) */
+    --problem-node-bg: 0 84.2% 30.6%; /* red-800 */
+    --problem-node-border: 0 84.2% 60.2%; /* red-600 */
+    --behavior-node-bg: 217 91% 30%; /* blue-800 */
+    --behavior-node-border: 217 91% 59%; /* blue-600 */
+    --result-node-bg: 142 71% 30%; /* green-800 */
+    --result-node-border: 142 71% 45%; /* green-600 */
+
+    /* Carousel Specific Colors (Dark Theme) */
+    --carousel-bg: 240 10% 3.9%; /* gray-900 */
+    --carousel-border: 240 3.7% 15.9%; /* gray-700 */
+    --carousel-text-primary: 240 0% 98%; /* gray-300 */
+    --evidence-highlight-bg: 240 10% 3.9%; /* gray-900 */
+    --evidence-highlight-border: 240 3.7% 15.9%; /* gray-700 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Custom DUX colors for terminal theme */
+  .font-barlow {
+    font-family: 'Barlow', 'IBM Plex Sans', 'Monaco', 'Menlo', 'Ubuntu Mono', sans-serif;
+  }
+  
+  .font-monospace {
+    font-family: 'IBM Plex Mono', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  }
+  
+  .font-sansBody {
+    font-family: 'Barlow', 'IBM Plex Sans', 'Monaco', 'Menlo', 'Ubuntu Mono', sans-serif;
+  }
+  
+  /* Clarity concept styles */
+  .border-card-clarity-border {
+    @apply border-green-600;
+  }
+  
+  .bg-card-clarity-bg {
+    @apply bg-gray-900;
+  }
+  
+  .text-card-clarity-text-muted {
+    @apply text-green-300;
+  }
+  
+  .text-text-secondary {
+    @apply text-green-500;
+  }
+  
+  /* Monospace concept styles - Terminal Green Theme */
+  .bg-card-monospace-bg {
+    background-color: hsl(var(--card-monospace-bg));
+  }
+  
+  .text-card-monospace-text-primary {
+    color: hsl(var(--card-monospace-text-primary));
+  }
+  
+  .text-card-monospace-text-secondary {
+    color: hsl(var(--card-monospace-text-secondary));
+  }
+  
+  .border-card-monospace-border {
+    border-color: hsl(var(--card-monospace-border));
+  }
+  
+  .bg-bg-tertiary {
+    @apply bg-gray-700;
+  }
+}

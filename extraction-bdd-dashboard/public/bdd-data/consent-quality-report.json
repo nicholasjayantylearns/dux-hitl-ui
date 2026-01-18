@@ -1,0 +1,467 @@
+{
+  "total_scenarios": 26,
+  "average_score": 92.3076923076923,
+  "scenarios": [
+    {
+      "scenario": "Alice is able to detect nearby users without apps or QR codes",
+      "feature": "Connect in person without creating a digital profile",
+      "file": "features/wink.features/01_connect_without_digital_profile.feature",
+      "line": 32,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Bob is able to receive instant proximity notifications",
+      "feature": "Connect in person without creating a digital profile",
+      "file": "features/wink.features/01_connect_without_digital_profile.feature",
+      "line": 52,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to broadcast presence passively without keeping Wallet open",
+      "feature": "Connect in person without creating a digital profile",
+      "file": "features/wink.features/01_connect_without_digital_profile.feature",
+      "line": 71,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Bob is able to receive automatic awareness of nearby opportunities",
+      "feature": "Connect in person without creating a digital profile",
+      "file": "features/wink.features/01_connect_without_digital_profile.feature",
+      "line": 92,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to participate all evening without battery anxiety",
+      "feature": "Connect in person without creating a digital profile",
+      "file": "features/wink.features/01_connect_without_digital_profile.feature",
+      "line": 112,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to signal general interest in connecting privately",
+      "feature": "Signal interest to someone nearby",
+      "file": "features/wink.features/02_signal_interest_to_someone_nearby.feature",
+      "line": 20,
+      "quality_score": 100,
+      "quality_layers": {
+        "functional": true,
+        "reliable": true,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Complete Slice (MDE)",
+      "issues": []
+    },
+    {
+      "scenario": "Bob is able to detect nearby interest signals reliably",
+      "feature": "Signal interest to someone nearby",
+      "file": "features/wink.features/02_signal_interest_to_someone_nearby.feature",
+      "line": 38,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to participate sustainably throughout full events",
+      "feature": "Signal interest to someone nearby",
+      "file": "features/wink.features/02_signal_interest_to_someone_nearby.feature",
+      "line": 62,
+      "quality_score": 100,
+      "quality_layers": {
+        "functional": true,
+        "reliable": true,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Complete Slice (MDE)",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to confirm interest using biometric authentication in under 2 seconds",
+      "feature": "Confirm mutual interest and connect",
+      "file": "features/wink.features/03_confirm_mutual_interest_and_connect.feature",
+      "line": 20,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to trust her biometric consent cannot be replayed or forged",
+      "feature": "Confirm mutual interest and connect",
+      "file": "features/wink.features/03_confirm_mutual_interest_and_connect.feature",
+      "line": 42,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice and Bob are able to receive instant mutual confirmation to proceed confidently",
+      "feature": "Confirm mutual interest and connect",
+      "file": "features/wink.features/03_confirm_mutual_interest_and_connect.feature",
+      "line": 60,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice and Bob are able to trust notifications are delivered reliably every time",
+      "feature": "Confirm mutual interest and connect",
+      "file": "features/wink.features/03_confirm_mutual_interest_and_connect.feature",
+      "line": 80,
+      "quality_score": 100,
+      "quality_layers": {
+        "functional": true,
+        "reliable": true,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Complete Slice (MDE)",
+      "issues": []
+    },
+    {
+      "scenario": "Alice and Bob are able to complete connection flow effortlessly in under 2 seconds",
+      "feature": "Confirm mutual interest and connect",
+      "file": "features/wink.features/03_confirm_mutual_interest_and_connect.feature",
+      "line": 97,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to receive health passport immediately after testing",
+      "feature": "Confirm partner's health status before meeting",
+      "file": "features/wink.features/04_confirm_partner_health_status_before_meeting.feature",
+      "line": 21,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to trust credential delivery works consistently",
+      "feature": "Confirm partner's health status before meeting",
+      "file": "features/wink.features/04_confirm_partner_health_status_before_meeting.feature",
+      "line": 40,
+      "quality_score": 100,
+      "quality_layers": {
+        "functional": true,
+        "reliable": true,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Complete Slice (MDE)",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to access health status using familiar Wallet interface",
+      "feature": "Confirm partner's health status before meeting",
+      "file": "features/wink.features/04_confirm_partner_health_status_before_meeting.feature",
+      "line": 57,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Bob is able to verify credentials anywhere without network dependency",
+      "feature": "Confirm partner's health status before meeting",
+      "file": "features/wink.features/04_confirm_partner_health_status_before_meeting.feature",
+      "line": 78,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to make informed decisions without awkward conversations",
+      "feature": "Confirm partner's health status before meeting",
+      "file": "features/wink.features/04_confirm_partner_health_status_before_meeting.feature",
+      "line": 97,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice and Bob are able to trust verification is authentic and cannot be faked",
+      "feature": "Confirm partner's health status before meeting",
+      "file": "features/wink.features/04_confirm_partner_health_status_before_meeting.feature",
+      "line": 117,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Bob is able to verify status without either identity being centrally tracked",
+      "feature": "Protect my reputation from stigma and rumors",
+      "file": "features/wink.features/05_protect_reputation_from_stigma_and_rumors.feature",
+      "line": 21,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to trust her history disappears automatically",
+      "feature": "Protect my reputation from stigma and rumors",
+      "file": "features/wink.features/05_protect_reputation_from_stigma_and_rumors.feature",
+      "line": 40,
+      "quality_score": 100,
+      "quality_layers": {
+        "functional": true,
+        "reliable": true,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Complete Slice (MDE)",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to understand what information is protected by system design",
+      "feature": "Protect my reputation from stigma and rumors",
+      "file": "features/wink.features/05_protect_reputation_from_stigma_and_rumors.feature",
+      "line": 58,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to complete connections instantly without technical delays",
+      "feature": "Complete connections in seconds with minimal steps",
+      "file": "features/wink.features/06_complete_connections_in_seconds_with_minimal_steps.feature",
+      "line": 21,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to understand issues and know when to retry",
+      "feature": "Complete connections in seconds with minimal steps",
+      "file": "features/wink.features/06_complete_connections_in_seconds_with_minimal_steps.feature",
+      "line": 47,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    },
+    {
+      "scenario": "Alice is able to renew proactively before experiencing connection failures",
+      "feature": "Complete connections in seconds with minimal steps",
+      "file": "features/wink.features/06_complete_connections_in_seconds_with_minimal_steps.feature",
+      "line": 67,
+      "quality_score": 100,
+      "quality_layers": {
+        "functional": true,
+        "reliable": true,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Complete Slice (MDE)",
+      "issues": []
+    },
+    {
+      "scenario": "Bob is able to recover from temporary failures automatically",
+      "feature": "Complete connections in seconds with minimal steps",
+      "file": "features/wink.features/06_complete_connections_in_seconds_with_minimal_steps.feature",
+      "line": 85,
+      "quality_score": 90,
+      "quality_layers": {
+        "functional": true,
+        "reliable": false,
+        "usable": true,
+        "delightful": true
+      },
+      "assessment": "Mostly Complete",
+      "issues": []
+    }
+  ],
+  "jtbd_validations": {
+    "Connect in person without creating a digital profile": {
+      "valid": true,
+      "score": 50,
+      "issues": [
+        {
+          "type": "missing_benefit_focus",
+          "severity": "INFO",
+          "message": "JTBD \"so that\" clause may not describe clear benefit",
+          "suggestion": "Focus on outcomes: trust, confidence, autonomy, efficiency, etc."
+        }
+      ],
+      "jtbd_text": "When I see someone attractive at an event, I want a natural way to start a conversation, so that I can connect without appearing desperate or being rejected publicly.",
+      "solution_agnostic": true,
+      "benefit_focused": false
+    },
+    "Signal interest to someone nearby": {
+      "valid": true,
+      "score": 50,
+      "issues": [
+        {
+          "type": "missing_benefit_focus",
+          "severity": "INFO",
+          "message": "JTBD \"so that\" clause may not describe clear benefit",
+          "suggestion": "Focus on outcomes: trust, confidence, autonomy, efficiency, etc."
+        }
+      ],
+      "jtbd_text": "When I find someone attractive at an event, I want to know if they're interested before approaching, so that I only pursue connections where interest is mutual. Evidence: Research shows \"Meet someone new, reduce rejection risk\" (Universal JTBD) Observable Signals: Mutual handshake count, declined signals invisible (privacy-preserved)",
+      "solution_agnostic": true,
+      "benefit_focused": false
+    },
+    "Confirm mutual interest and connect": {
+      "valid": true,
+      "score": 75,
+      "issues": [],
+      "jtbd_text": "When I find someone attractive, I want to confirm mutual interest privately, so that I feel confident to connect with dignity and mutual respect. Evidence: Research shows \"Meet someone new, reduce rejection risk\" (Universal JTBD) Observable Signals: Mutual handshake count, non-mutual signals remain invisible",
+      "solution_agnostic": true,
+      "benefit_focused": true
+    },
+    "Confirm partner's health status before meeting": {
+      "valid": true,
+      "score": 75,
+      "issues": [],
+      "jtbd_text": "When I'm considering intimacy with someone I just met, I want to confirm their health status without an awkward conversation, so that I can proceed confidently or decline gracefully without ruining the connection. Evidence: Research shows \"Verify partner's health status, privately\" (Universal JTBD) Observable Signals: Health credential verification count, zero verbal status discussions - \u226590% of users trust the verification is authentic",
+      "solution_agnostic": true,
+      "benefit_focused": true
+    },
+    "Protect my reputation from stigma and rumors": {
+      "valid": true,
+      "score": 75,
+      "issues": [],
+      "jtbd_text": "When I attend events for social/sexual connection, I want to protect my reputation from stigma or rumor, so that I participate confidently without fear of exposure. Evidence: Research shows \"Protect my reputation from stigma or rumor\" (Universal JTBD) Observable Signals: No reputational data stored, all metrics aggregated not personal - \u226585% of users trust platform with sensitive health information",
+      "solution_agnostic": true,
+      "benefit_focused": true
+    },
+    "Complete connections in seconds with minimal steps": {
+      "valid": true,
+      "score": 50,
+      "issues": [
+        {
+          "type": "missing_benefit_focus",
+          "severity": "INFO",
+          "message": "JTBD \"so that\" clause may not describe clear benefit",
+          "suggestion": "Focus on outcomes: trust, confidence, autonomy, efficiency, etc."
+        }
+      ],
+      "jtbd_text": "When someone shows interest in connecting, I want to confirm and exchange contact quickly, so that I don't lose the opportunity while they're still engaged. Evidence: Research shows \"Minimize time and steps to connect authentically\" (Universal JTBD) Observable Signals: Time-to-connection <3s, zero app switching, one-tap completion - \u226595% of users rate system reliability as \"dependable",
+      "solution_agnostic": true,
+      "benefit_focused": false
+    }
+  }
+}
